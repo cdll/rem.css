@@ -1,11 +1,11 @@
-# rem.css
+# flexible.rem
 
 ## install
 ````shell
-pnpm i -S rem.css
+pnpm i -S flexible.rem
 ````
 
 ## usage
 ````css
-@import "rem.css";
+@import "flexible.rem";
 ````
