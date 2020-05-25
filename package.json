@@ -1,6 +1,6 @@
 {
-  "name": "flexible.rem",
-  "version": "1.0.0",
+  "name": "rem.less",
+  "version": "1.0.1",
   "description": "CSS version of taobaoUED flexible rem solution",
   "main": "src/index.less",
   "style": "src/index.css",
@@ -14,13 +14,13 @@
     "type": "git",
     "url": "https://github.com/cdll/rem.css.git"
   },
-  "keywords": ["flexible", "rem"],
+  "keywords": ["flexible", "rem", "less"],
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "flexible.rem": "link:",
+    "rem.less": "link:",
     "less": "^3.11.1",
     "parcel-bundler": "^1.12.4",
     "rimraf": "^3.0.2"

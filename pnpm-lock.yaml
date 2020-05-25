@@ -1,8 +1,8 @@
 devDependencies:
   cssnano: 4.1.10
-  flexible.rem: 'link:'
   less: 3.11.1
   parcel-bundler: 1.12.4
+  rem.less: 'link:'
   rimraf: 3.0.2
 lockfileVersion: 5.1
 packages:
@@ -5470,7 +5470,7 @@ packages:
       integrity: sha512-ZbotRWhF+lkjijC/VhmOT9wSgyBQ7+zr13+YLkhfsSiTriYsMzkTUFP18pFhWwBeMa5gUc1MzbhrO6/VB7c9Xg==
 specifiers:
   cssnano: ^4.1.10
-  flexible.rem: 'link:'
   less: ^3.11.1
   parcel-bundler: ^1.12.4
+  rem.less: 'link:'
   rimraf: ^3.0.2

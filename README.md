@@ -2,10 +2,10 @@
 
 ## install
 ````shell
-pnpm i -S flexible.rem
+pnpm i -S rem.less
 ````
 
 ## usage
-````css
-@import "flexible.rem";
+````less
+@import "rem.less";
 ````
