@@ -1,12 +1,12 @@
 {
-  "name": "rem.css",
+  "name": "flexible.rem",
   "version": "1.0.0",
   "description": "CSS version of taobaoUED flexible rem solution",
   "main": "src/index.less",
-  "style": "dist/index.css",
+  "style": "src/index.css",
   "scripts": {
     "test": "rimraf dist/ && parcel serve test/test.html",
-    "build": "rimraf dist/ && parcel build src/*.less",
+    "build": "rimraf dist/ && parcel build src/index.less src/compact.less --out-dir src/",
     "postinstall": "npm run build",
     "start": "rimraf dist/ && parcel src/*.less"
   },
@@ -17,13 +17,12 @@
   "keywords": ["flexible", "rem"],
   "author": "",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "flexible.rem": "link:",
     "less": "^3.11.1",
     "parcel-bundler": "^1.12.4",
     "rimraf": "^3.0.2"
-  },
-  "peerDependencies": {
-    "rem.css": "link:"
   }
 }
