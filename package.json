@@ -1,0 +1,29 @@
+{
+  "name": "rem.css",
+  "version": "1.0.0",
+  "description": "CSS version of taobaoUED flexible rem solution",
+  "main": "src/index.less",
+  "style": "dist/index.css",
+  "scripts": {
+    "test": "rimraf dist/ && parcel serve test/test.html",
+    "build": "rimraf dist/ && parcel build src/*.less",
+    "postinstall": "npm run build",
+    "start": "rimraf dist/ && parcel src/*.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.jiliguala.com:david/rem.css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "less": "^3.11.1",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2"
+  },
+  "peerDependencies": {
+    "rem.css": "link:"
+  }
+}

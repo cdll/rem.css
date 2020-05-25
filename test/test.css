@@ -1,0 +1,14 @@
+/* @import '../src/index.less'; */
+@import 'rem.css';
+
+*{
+  font-family: sans-serif;
+}
+
+body.test{
+  max-width: 10rem;
+  margin: 0 auto;
+}
+.text-rem-responsive{
+  font-size: .5rem;
+}
