@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.jiliguala.com:david/rem.css.git"
+    "url": "https://github.com/cdll/rem.css.git"
   },
-  "keywords": [],
+  "keywords": ["flexible", "rem"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
