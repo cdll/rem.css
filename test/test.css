@@ -10,5 +10,5 @@ body.test{
   margin: 0 auto;
 }
 .text-rem-responsive{
-  font-size: .5rem;
+  font-size: @defaultFz/@baseFz;
 }

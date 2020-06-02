@@ -1,26 +1,32 @@
 // detail; https://unpkg.com/lib-flexible@0.3.2/flexible.js
 @baseFz: 37.5rem;
+@padScreenQuery: (orientation: portrait) and (min-width: 512px),
+(orientation: landscape) and (min-height: 512px);
+
 //放在后面以保证cssnano打包后的顺序, 影响选择器优先级
 html{
   font-size: 10vm;
   font-size: 10vmin;
-  body{
-    font-size: 12px;
-    @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
-      font-size: 12px * 2;
-    }
-    @media (min-resolution: 3dppx), (-webkit-min-device-pixel-ratio: 3) {
-      font-size: 12px * 3;
-    }
-  }
 
   // for Pads
   @media screen {
-    @media (orientation: portrait) and (min-width: 512px),
-    (orientation: landscape) and (min-height: 512px) {
+    @media @padScreenQuery {
       font-size: 7.5vm;
       font-size: 7.5vmin;
     }
   }
 }
 
+body{
+  @defaultFz: 16px;
+  font-size: @defaultFz;
+  @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+    font-size: @defaultFz * 1;
+  }
+  @media (min-resolution: 2.5dppx), (-webkit-min-device-pixel-ratio: 2.5) {
+    font-size: @defaultFz * 2;
+  }
+  @media (min-resolution: 3dppx), (-webkit-min-device-pixel-ratio: 3) {
+    font-size: @defaultFz * 3;
+  }
+}
