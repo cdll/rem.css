@@ -1,5 +1,6 @@
 // detail; https://unpkg.com/lib-flexible@0.3.2/flexible.js
 @baseFz: 37.5rem;
+@defaultFz: 16px;
 @padScreenQuery: (orientation: portrait) and (min-width: 512px),
 (orientation: landscape) and (min-height: 512px);
 
@@ -18,7 +19,6 @@ html{
 }
 
 body{
-  @defaultFz: 16px;
   font-size: @defaultFz;
   @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
     font-size: @defaultFz * 1;

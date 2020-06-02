@@ -1,11 +1,19 @@
 # flexible.rem
 
-## install
+## INSTALL
 ````shell
 pnpm i -S rem.less
 ````
 
-## usage
+## USAGE
 ````less
 @import "rem.less";
 ````
+
+## LESS VARIABLE
+>@baseFz: ``37.5rem``;
+
+>@defaultFz: ``16px``;
+
+>@padScreenQuery: ``(orientation: portrait) and (min-width: 512px),
+(orientation: landscape) and (min-height: 512px)``.
